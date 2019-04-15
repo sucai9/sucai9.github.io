@@ -1,0 +1,53 @@
+
+源代码管理以及版本控制，用于多人合作开发
+
+svn 
+git  比svn更时髦
+github   远程仓库 
+
+
+git操作：
+   1.打开git Bash 命令控制台。先进入桌面 
+   2. 利用 （mkdir 文件夹名字）  在桌面上创建一个文件夹
+   3. 初始化一个本地仓库  git init  初始化之后，在文件夹中就会产生一个.git的隐藏文件
+
+git 存储方式：工作区域－－－》缓存区－－－》本地仓库
+  
+  在本地仓库的文件夹中编辑一个文件，作为工作区
+  在里面编辑内容，出门了，现在要将工作区的内容进行保存
+   
+   git status  检查git库的状态
+
+   git add ‘文本名’ 将文件放到缓存区中
+   (git add . 将文件夹中的所有文件添加到缓存区中)
+
+   git commit -m '提交的标识名（版本号）' 将缓存区的文件提交到本地仓库中
+
+（
+   若是第一次使用git进行commit提交就会出现
+   git 就会提示
+      please tell me who you are
+    执行 
+      git config --global user.email "邮箱地址"
+      git config --global user.name "用户名"
+   ）
+   
+
+   git commit -a -m "提交的标识名（版本号）" 直接将工作
+   区中文件一次性放到缓存区中，并且直接提交到本地仓库
+
+
+   版本回滚  
+   7cf657c  版本3   784f0a0 版本2   bb82b66 版本1
+   git reset  --hard  [commit id]  进行指定版本的回滚
+
+
+
+   git log  查看操作记录（本次仓库存储记录）
+   git reflog 查看操作的历史纪录
+   
+
+   
+
+
+
